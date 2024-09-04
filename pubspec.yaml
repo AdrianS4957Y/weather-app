@@ -1,5 +1,5 @@
 name: weathers
-description: "A new Flutter project."
+description: "Weather application."
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  html: ^0.15.4
+  http: ^1.2.2
+  loading_animation_widget: ^1.2.1
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +20,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+  - assets/rainy_big.png
+  - assets/snowy_big.png
+  - assets/windy_big.png
+  - assets/search_icon.png
+  - assets/states/wind.png
+  - assets/states/humidity.png
+  - assets/states/rainfall.png
