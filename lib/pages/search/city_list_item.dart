@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:weathers/api/json/city.dart';
 import 'package:weathers/globals/fonts.dart';
-// import 'package:weathers/globals/routes.dart';
 
 class CityListItem extends StatefulWidget {
-  final String cityName;
+  final City city;
   final Function onClick;
   const CityListItem({
     super.key,
-    required this.cityName,
+    required this.city,
     required this.onClick,
   });
 
@@ -26,7 +26,6 @@ class CityListItemState extends State<CityListItem> {
           setState(() {
             widget.onClick();
           });
-          // Navigator.pushNamed(context, Routes.loading);
         },
         child: Container(
           decoration: BoxDecoration(
@@ -40,7 +39,7 @@ class CityListItemState extends State<CityListItem> {
           child: Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              widget.cityName,
+              widget.city.asciiName,
               style: Fonts.inter(
                   color: const Color(0xFF303345),
                   fontWeight: FontWeight.w600,

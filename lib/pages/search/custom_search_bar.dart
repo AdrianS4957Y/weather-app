@@ -50,7 +50,7 @@ class CustomSearchBarState extends State<CustomSearchBar> {
                       },
                       style: Fonts.inter(
                         fontSize: 8,
-                        color: Color.fromARGB(255, 41, 27, 27),
+                        color: const Color.fromARGB(255, 41, 27, 27),
                         fontWeight: FontWeight.w600,
                       ),
                       decoration: InputDecoration(

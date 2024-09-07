@@ -22,8 +22,6 @@ class SearchState extends State<Search> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          // preferredSize:
-          //     Size.fromHeight(MediaQuery.of(context).size.height * 48 / 471),
           backgroundColor: Colors.transparent,
           centerTitle: true,
           title: Text(
@@ -44,11 +42,9 @@ class SearchState extends State<Search> {
               children: [
                 CustomSearchBar(
                   onChange: (String text) {
-                    if (text.length >= 3) {
-                      setState(() {
-                        searchText = text;
-                      });
-                    }
+                    setState(() {
+                      searchText = text;
+                    });
                   },
                 ),
                 CitiesList(
