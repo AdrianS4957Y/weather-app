@@ -1,7 +1,7 @@
 name: weathers
-description: "Weather application."
+description: "Weather browser application by AdrianS4957Y."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
@@ -11,7 +11,12 @@ dependencies:
     sdk: flutter
   html: ^0.15.4
   http: ^1.2.2
+  logging: ^1.0.2
   loading_animation_widget: ^1.2.1
+  open_meteo: ^2.0.1
+  intl: ^0.19.0
+  flutter_svg: ^2.0.10+1
+  rename_app: ^1.6.1
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +33,6 @@ flutter:
   - assets/states/wind.png
   - assets/states/humidity.png
   - assets/states/rainfall.png
+  - assets/cities-dataset.json
+  - assets/sky_states/
+  - assets/states/

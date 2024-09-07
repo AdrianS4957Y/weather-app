@@ -1,3 +1,8 @@
 {
-    "cmake.sourceDirectory": "/home/adrians4957y/Рабочий стол/projects/simple_team/flutter/weathers/weathers/linux"
+    "cmake.sourceDirectory": "/home/adrians4957y/Рабочий стол/projects/simple_team/flutter/weathers/weathers/linux",
+    "cSpell.words": [
+        "meteo",
+        "microtask",
+        "pogoda"
+    ]
 }

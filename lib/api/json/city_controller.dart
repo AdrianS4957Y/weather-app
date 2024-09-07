@@ -24,10 +24,13 @@ class CityController {
   }
 
   static List<City> findCitiesByName(String name) {
+    name = name.toLowerCase();
     return CityController.filter(
       (city) =>
-          city.alternateNames.where((c) => c.contains(name)).isNotEmpty ||
-          city.asciiName.contains(name),
+          city.alternateNames
+              .where((c) => c.toLowerCase().contains(name))
+              .isNotEmpty ||
+          city.asciiName.toLowerCase().contains(name),
     );
   }
 }
